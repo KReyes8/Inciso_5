@@ -1,0 +1,55 @@
+/*
+Karen Reyes Ramirez
+Universidad Autónoma de Durango
+Examen*/
+body { /* Los comandos para el acomodo y estilo del cuerpo de nuestra página */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.carousel { /* Aquí se modifica el contenedor del carrusel*/
+    position: relative;
+    width: 60%;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-images img { /*Se modifican las imagenes que están dentro del div*/
+    width: 100%;
+    display: block;
+}
+
+button { /*Estos codigos cambian el estilo, la posición y el tamaño de nuestros botones*/
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
